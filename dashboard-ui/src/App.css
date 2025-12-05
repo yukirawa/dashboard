@@ -1,0 +1,40 @@
+/* 全体のレイアウト */
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.dashboard-title {
+  text-align: center;
+  color: #333;
+}
+
+/* グリッド設定：PCでは2列、スマホでは1列 */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* カード共通のデザイン */
+.dashboard-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-height: 200px;
+  transition: transform 0.2s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+/* 個別のカード背景色（お好みで） */
+.clock-card { background-color: #e3f2fd; }
+.weather-card { background-color: #fff3e0; }
+.memo-card { background-color: #f3e5f5; }
+.todo-card { background-color: #e8f5e9; }
